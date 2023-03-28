@@ -7,9 +7,11 @@ function ProfileCard({title, handle, image}) {
                 </figure>
             </div>
             <div className="card-content">
-                <div className="media-content">
-                    <p className="title is-4">{title}</p>
-                    <p className="subtitle is-6">{handle}</p>
+                <div className="media">
+                    <div className="media-content">
+                        <p className="title is-5">{title}</p>
+                        <p className="subtitle is-7">{handle}</p>
+                    </div>
                 </div>
             </div>
         </div>

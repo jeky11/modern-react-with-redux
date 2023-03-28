@@ -11,7 +11,7 @@ function App() {
 
             <div className="container">
                 <section className="section">
-                    <div className="columns">
+                    <div className="columns is-mobile">
                         <div className="column is-3">
                             <ProfileCard title="Alexa" handle="@alexa99" image={AlexaImage}/>
                         </div>
