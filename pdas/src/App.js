@@ -17,7 +17,7 @@ function App() {
 
             <div className="container">
                 <section className="section">
-                    <div className="columns is-mobile">
+                    <div className="columns">
                         <div className="column is-3">
                             <ProfileCard
                                 title="Alexa"
