@@ -1,7 +1,13 @@
+import SearchBar from "./components/SearchBar";
+
 function App() {
+    const handleSubmit = (term) => {
+        console.log(term);
+    };
+
     return (
         <div>
-            App
+            <SearchBar onSubmit={handleSubmit}/>
         </div>
     );
 }
