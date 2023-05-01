@@ -1,9 +1,13 @@
-import {useState} from "react";
+import BookShow from "./BookShow";
 
-function BookList() {
+function BookList({books}) {
+    const renderedBooks = books.map((book) => {
+        return <BookShow key={book.id} book={book}/>;
+    });
+
     return (
-        <div>
-            BookList
+        <div className="book-list">
+            {renderedBooks}
         </div>
     );
 }
