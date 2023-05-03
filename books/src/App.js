@@ -8,7 +8,7 @@ function App() {
 
     useEffect(() => {
         fetchBooks(); // must be used without await
-    }, []);
+    }, [fetchBooks]);
 
     return (
         <div className="app">
