@@ -4,18 +4,22 @@ function App() {
     return (
         <div>
             <div>
-                <Button primary>Click me!</Button>
+                <Button primary rounded outline>Click me!</Button>
             </div>
             <div>
-                <Button secondary>Button 2</Button>
+                <Button secondary outline>Button 2</Button>
             </div>
             <div>
-                <Button>Hello</Button>
+                <Button success>Hello</Button>
             </div>
             <div>
-                <Button>Cancel</Button>
+                <Button warning outline>Cancel</Button>
             </div>
-        </div>);
+            <div>
+                <Button danger rounded>Oh no!</Button>
+            </div>
+        </div>
+    );
 }
 
 export default App;
