@@ -7,13 +7,13 @@ function App() {
                 <Button primary>Click me!</Button>
             </div>
             <div>
-                <Button secondary>ff</Button>
+                <Button secondary>Button 2</Button>
             </div>
             <div>
-                <Button>ss</Button>
+                <Button>Hello</Button>
             </div>
             <div>
-                <Button>aa</Button>
+                <Button>Cancel</Button>
             </div>
         </div>);
 }
