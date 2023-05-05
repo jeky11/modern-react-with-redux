@@ -2,10 +2,14 @@ import {GoBell, GoCloudDownload, GoDatabase} from "react-icons/go";
 import Button from "./Button";
 
 function App() {
+    const handleClick = () => {
+        console.log("click!");
+    };
+
     return (
         <div>
             <div>
-                <Button primary rounded outline>
+                <Button primary rounded outline className="mb-5" onClick={handleClick}>
                     <GoBell/>
                     Click me!
                 </Button>
