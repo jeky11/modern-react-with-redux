@@ -1,7 +1,14 @@
-﻿function Dropdown() {
+﻿function Dropdown({options}) {
+    const renderedOptions = options.map(option => {
+        return <div key={option.value}>
+            {option.label}
+        </div>
+    });
+
     return (
         <div>
-            Dropdown
+            <div>Select...</div>
+            <div>{renderedOptions}</div>
         </div>
     );
 }
