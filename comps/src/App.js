@@ -5,7 +5,8 @@ import Sidebar from "./components/Sidebar";
 import ButtonPage from "./pages/ButtonPage";
 import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
-import CounterPage from "./pages/CounterPage";
+import CounterPageV1 from "./pages/CounterPageV1";
+import CounterPageV2 from "./pages/CounterPageV2";
 
 function App() {
     return (
@@ -27,8 +28,11 @@ function App() {
                 <Route path="/table">
                     <TablePage/>
                 </Route>
-                <Route path="/counter">
-                    <CounterPage initialCount={10}/>
+                <Route path="/counter-v1">
+                    <CounterPageV1 initialCount={10}/>
+                </Route>
+                <Route path="/counter-v2">
+                    <CounterPageV2 initialCount={10}/>
                 </Route>
             </div>
         </div>

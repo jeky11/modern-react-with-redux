@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-function useCounter(initialCount) {
+function useCounterV1(initialCount) {
     const [count, setCount] = useState(initialCount);
 
     useEffect(() => {
@@ -17,4 +17,4 @@ function useCounter(initialCount) {
     };
 }
 
-export default useCounter;
+export default useCounterV1;

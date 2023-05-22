@@ -1,8 +1,8 @@
-import useCounter from "../hooks/use-counter";
+import useCounterV1 from "../hooks/use-counter-v1";
 import Button from "../components/Button";
 
-function CounterPage({initialCount}) {
-    const {count, increment} = useCounter(initialCount);
+function CounterPageV1({initialCount}) {
+    const {count, increment} = useCounterV1(initialCount);
 
     return (
         <div>
@@ -12,4 +12,4 @@ function CounterPage({initialCount}) {
     );
 }
 
-export default CounterPage;
+export default CounterPageV1;
