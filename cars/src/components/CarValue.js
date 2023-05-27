@@ -1,4 +1,4 @@
-﻿function CarValue() {
+function CarValue() {
     return (
         <div>
             CarValue

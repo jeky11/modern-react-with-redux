@@ -1,4 +1,4 @@
-﻿import {useDispatch, useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {changeCost, changeName, addCar} from "../store";
 
 function CarForm() {
