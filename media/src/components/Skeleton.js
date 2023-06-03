@@ -1,4 +1,4 @@
-﻿import classNames from "classnames";
+import classNames from "classnames";
 
 function Skeleton({times, className}) {
     const outerClassNames = classNames(
