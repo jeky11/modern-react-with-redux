@@ -14,11 +14,11 @@ function UsersList() {
     }, [dispatch]);
 
     if (isLoading) {
-        return <Skeleton times={6}/>
+        return <Skeleton times={6} className='h-10 w-full'/>;
     }
 
     if (error) {
-        return <div>Error fetching data...</div>
+        return <div>Error fetching data...</div>;
     }
 
     return (
