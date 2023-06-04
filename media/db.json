@@ -1,10 +1,5 @@
-﻿{
-  "users": [
-    {
-      "id": 1,
-      "name": "Myra"
-    }
-  ],
+{
+  "users": [],
   "albums": [],
   "photos": []
 }

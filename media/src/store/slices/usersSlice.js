@@ -7,8 +7,8 @@ const usersSlice = createSlice({
     name: 'users',
     initialState: {
         data: [],
-        isLoading: false,
-        error: null
+        isLoading: false, //actually is not used
+        error: null //actually is not used
     },
     extraReducers(builder) {
         builder.addCase(fetchUsers.pending, (state, action) => {
@@ -40,7 +40,9 @@ const usersSlice = createSlice({
         });
         builder.addCase(removeUser.fulfilled, (state, action) => {
             state.isLoading = false;
-            //state.data.push(action.payload);
+            state.data = state.data.filter((user) => {
+                return user.id !== action.payload.id;
+            });
         });
         builder.addCase(removeUser.rejected, (state, action) => {
             state.isLoading = false;
